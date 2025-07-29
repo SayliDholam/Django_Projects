@@ -1,0 +1,32 @@
+STEPS:
+
+---------
+
+git repo 
+
+clone 
+
+open it bash and check status
+
+open cmd and -> python --version -> pip install virtualenv -> virtualenv venv -> venv\scripts\activate -> pip install Django -> Django-admin version
+
+create a project/site - django-admin startproject myLearn
+
+create an app in the project/site - cd .\myLearn\  -> django-admin startapp Hello_World
+
+configure app in settings.py of the project
+
+configure views.py for that app
+
+configure urls.py of the project
+
+cmd -> python manage.py runserver
+
+ctrl + c
+
+cmd -> deactivate
+
+cmd -> pip freeze > requirements.txt
+
+git necessary files to gitignore
+
