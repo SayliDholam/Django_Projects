@@ -1,0 +1,17 @@
+# Python virtual environment
+env/
+venv/
+.env
+
+# Bytecode files
+__pycache__/
+*.pyc
+
+db.sqlite3
+.vscode/
+
+# log files
+*.log
+
+
+
