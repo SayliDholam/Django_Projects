@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+input, select, button {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add this for button container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Update existing button style */
+button {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+#calc-btn {
+    background-color: #28a745;
+}
+
+#calc-btn:hover {
+    background-color: #218838;
+}
+
+#clear-btn {
+    background-color: #007bff;
+}
+
+#clear-btn:hover {
+    background-color: #0069d9;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+#result-label {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #e9ecef; /* light gray background */
+    color: #333;
+     margin-top: 8px;
+}
