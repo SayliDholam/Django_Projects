@@ -30,3 +30,21 @@ cmd -> pip freeze > requirements.txt
 
 git necessary files to gitignore
 
+------
+
+python manage.py makemigrations
+python manage.py migrate
+
+------
+
+PROJECT:
+myLearn
+
+APPS:
+hello world ✔️
+calculator ✔️
+To-Do ✔️
+Blog app (with comments)
+Notes app with login/logout (learn auth)
+Weather app using API
+File upload/gallery app
