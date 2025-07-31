@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Hello_World',  # Custom app
-    'Calc' # Custom app
+    'Calc',  # Custom app
+    'ToDo',  # Custom app
 ]
 
 MIDDLEWARE = [
