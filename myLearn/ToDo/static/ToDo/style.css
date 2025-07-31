@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    padding: 30px;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+/* Add Task Button Styling */
+.add-btn {
+    width: 50%;
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task Section */
+.task-list {
+    margin-top: 10px;
+}
+
+/* Task Card */
+.task-card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-left: 6px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task Title */
+.task-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    flex: 1;
+    word-break: break-word;
+}
+
+/* Task Buttons */
+.task-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common Button Base */
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Individual Button Colors */
+.btn.pending   { background-color: #ffc107; }
+.btn.ongoing   { background-color: #17a2b8; }
+.btn.completed { background-color: #28a745; }
+.btn.delete    { background-color: #dc3545; }
+
+/* Status Colors */
+.task-card.pending   { border-left-color: #ffc107; }
+.task-card.ongoing   { border-left-color: #17a2b8; }
+.task-card.completed { border-left-color: #28a745; }
+
+/* No Task Message */
+.no-tasks {
+    text-align: center;
+    color: #888;
+    margin-top: 40px;
+    font-style: italic;
+}

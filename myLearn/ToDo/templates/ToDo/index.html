@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{% static 'ToDo/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <form method="POST" action="{% url 'add_task' %}" class="task-form">
+            {% csrf_token %}
+            
+            <div class="task-form">
+                {{ form.title.errors }}
+                {{ form.title }}
+            </div>
+            <button type="submit" class="add-btn">Add Task</button>
+        </form>
+
+        <hr>
+
+        <div class="task-list">
+            {% for task in tasks %}
+                <div class="task-card {{ task.status }}">
+                    <span class="task-title">{{ task.title }}</span>
+                    <div class="task-buttons">
+                        {% if task.status != 'pending' %}
+                            <button onclick="updateStatus({{ task.id }}, 'pending')" class="btn pending">Pending</button>
+                        {% endif %}
+                        {% if task.status != 'ongoing' %}
+                            <button onclick="updateStatus({{ task.id }}, 'ongoing')" class="btn ongoing">Ongoing</button>
+                        {% endif %}
+                        {% if task.status != 'completed' %}
+                            <button onclick="updateStatus({{ task.id }}, 'completed')" class="btn completed">Completed</button>
+                        {% endif %}
+                        <button onclick="deleteTask({{ task.id }})" class="btn delete">Delete</button>
+                    </div>
+                </div>
+            {% empty %}
+                <p class="no-tasks">No tasks yet. Add one above! ✨</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="{% static 'ToDo/script.js' %}"></script>
+</body>
+</html>
