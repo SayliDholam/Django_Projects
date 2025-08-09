@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Hello_World',  # Custom app
     'Calc',  # Custom app
     'ToDo',  # Custom app
+    'myLearn',  # Custom app
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'myLearn.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['myLearn/templates'],  # Directory for custom templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
