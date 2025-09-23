@@ -25,4 +25,5 @@ urlpatterns = [
     path('ToDo/', include('ToDo.urls')),
     path('home/', home),
     path('about/', about),
+    path('posts/', include('posts.urls')),
 ]
