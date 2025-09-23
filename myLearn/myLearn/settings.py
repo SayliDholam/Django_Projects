@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Calc',  # Custom app
     'ToDo',  # Custom app
     'myLearn',  # Custom app
+    'posts',  # Custom app
 ]
 
 MIDDLEWARE = [
