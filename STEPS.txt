@@ -37,6 +37,11 @@ python manage.py migrate
 
 ------
 
+python manage.py createsuperuser
+set user and password 
+
+------
+
 PROJECT:
 myLearn
 
